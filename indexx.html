@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LCP</title>
+	<link rel="stylesheet" type="text/css" href="./res/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./res/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.min.css">
+</head>
+
+<body>
+	<div class="contaier-fluid">
+		<div class="row m-0">
+			<div class="col-12 p-0">
+				<div class="landing-section">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="loader">
+		<div class="loader-logo loaderEntrance"></div>
+	</div>
+	<script type="text/javascript" src="./res/jquery.min.js"></script>
+	<script type="text/javascript" src="./res/popper.min.js"></script>
+	<script type="text/javascript" src="./res/bootstrap/js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			init_loading();
+		});
+
+		function init_loading(){
+			setTimeout(function(){
+				$('.loader').fadeOut();
+			},1000)
+		}
+
+		// $(window).on('load', function(){ 
+		// 	$('.loader').hide();
+		// });
+	</script>
+</body>
+
+</html>
+
+.loader{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:white;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	.loader-logo{
+		background-image: url('../images/seal.png');
+		background-repeat: no-repeat;
+		background-size:contain;
+		width:250px;
+		height: 250px;
+	
+	}
+}
+
+.loaderEntrance{
+	animation: rotateIn .5s linear 1; 
+}
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Lipa City Official Website</title>
+	<link rel="stylesheet" type="text/css" href="./res/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./res/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./res/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.min.css">
+</head>
+
+<body>
+	<div class="navigation">
+		<div class="navigation__top">
+			<div class="top__logo">
+				<div class="top__logo__image"></div>
+				<div class="top__logo__title">
+					Lipa City <br> Official Website
+				</div>
+			</div>
+
+			<div class="top__info">
+			</div>
+		</div>
+		<div class="navigation__bottom"></div>
+	</div>
+
+	<div class="contaier-fluid">
+		<div class="row m-0">
+			<div class="col-12 p-0">
+				<div class="section__landing"></div>
+			</div>
+		</div>
+		<div class="row m-0">
+			<div class="col-12 p-0">
+				<div class="section__landing"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./res/jquery.min.js"></script>
+	<script type="text/javascript" src="./res/popper.min.js"></script>
+	<script type="text/javascript" src="./res/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./res/parallax.min.js"></script>
+</body>
+
+</html>
